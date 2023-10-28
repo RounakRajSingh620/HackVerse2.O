@@ -1,0 +1,79 @@
+.page-2main{
+  height:100vh;
+  width:100vw;
+  font-size:3vh;
+  background-color:black;
+  color:white;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+.form1{
+  margin-left:2vw;
+  width:50%;
+}
+.form2{
+  width:50%;
+}
+input{
+  width:50%;
+  height:5vh;
+  margin-top:2vh;
+  margin-bottom:2vh;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  padding-left:1vw;
+}
+.addmore{
+  width:30%;
+  height:5vh;
+  margin-top:2vh;
+  margin-bottom:2vh;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  margin-left:5vw;
+  font-size:1.1rem;
+}
+.tenent{
+  display:flex;
+}
+.upload{
+  width:25%;
+  height:5vh;
+  margin-top:2vh;
+  margin-bottom:2vh;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  margin-left:2vw;
+  font-size:1.1rem;
+}
+.upload1{
+  width:25%;
+  height:5vh;
+  margin-top:2vh;
+  margin-bottom:2vh;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  margin-right:1vw;
+  font-size:1.1rem;
+}
+.submit{
+  width:30%;
+  height:5vh;
+  border-radius:5px;
+
+}
+.mainn{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100vw;
+  font-size:3vh;
+  background-color:black;
+  color:white;
+
+}

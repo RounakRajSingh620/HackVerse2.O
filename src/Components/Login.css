@@ -1,0 +1,29 @@
+.pagee3{
+  background-color:black;
+  color:white;
+}
+.page3main{
+  height:100vh;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+
+.left1{
+  background-color:white;
+  color:black; 
+  width:20%;
+  height:40%;
+
+}
+.right1{
+  background-color:white;
+  color:black; 
+  width:20%;
+  height:40%;
+
+}
+.how{
+  font-size:3rem;
+
+}

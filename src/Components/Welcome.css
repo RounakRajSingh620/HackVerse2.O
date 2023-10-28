@@ -1,0 +1,61 @@
+.whole {
+  background-color: black;
+  color: white;
+  height: 90vh;
+  display: flex;
+  justify-content: space-between;
+}
+.main1 {
+  height: 100%;
+  width: 50%;
+  max-width: content;
+  font-size: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  margin-left:10%;
+  float :left;
+
+}
+  .span {
+    line-height: 1.4em;
+  }
+/* .button1 {
+  width: 40%;
+  margin-left:1vw;
+  font-size: 5vh;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: black;
+} */
+
+.button1{
+  background-color:#fff;
+  color:black;
+  
+  font-size:5vh;
+  
+}
+.main2 {
+  height: 100%;
+}
+.image1 {
+  height: 100%;
+  width: 100%;
+}
+
+
+.joinBtn{
+  background-color:#fff;
+  color:black;
+  font-size:2rem;
+  cursor:pointer;
+  border-radius:12px;
+  padding:1rem;
+  margin:1rem;
+  font-family: 'Poppins', sans-serif;
+  left: 0;
+  float:left;
+  width:max-content;
+}
