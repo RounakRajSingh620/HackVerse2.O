@@ -4,6 +4,9 @@ import Welcome from "./Components/Welcome";
 import Details from "./Components/Details";
 import Payee from "./Components/Paye";
 import Login from "./Components/Login";
+import Completed from "./Components/Completed";
+import Payment from "./Components/Payment1";
+import '@rainbow-me/rainbowkit/styles.css';
 import { alchemyProvider } from 'wagmi/providers/alchemy';
 import { publicProvider } from 'wagmi/providers/public';
 import {
@@ -44,6 +47,8 @@ const App = () => {
                                                 <Route path="/owner" element={<>   <Details /></>} />
                                                 <Route path="/tenant" element={<>   <Payee /></>} />
                                                 <Route path="/dashboard" element={<>  <Login /></>} />
+                                                <Route path="/Payment" element={<>  <Payment /></>} />
+                                                <Route path="/Completed" element={<>  <Completed /></>} />
                                         </Routes>
                                 </Router>
                         </RainbowKitProvider>

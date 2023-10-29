@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from "react-router-dom"
+
 import './Details.css';
 
 export default function MyForm() {
+  const navigate = useNavigate()
   const [tenantenub, setTnenateNumber] = useState();
   const [date, setDate] = useState();
   const [deposit , setDrposit] = useState();
@@ -75,19 +78,21 @@ export default function MyForm() {
             </label>
           </form>
           <form className="rightForm" onSubmit={handleSubmit}>
-            Tenent 1
+            Tenent 1 <br/>
             <span >Public address</span>
             <label className='tenent'>
             <input type="text" onChange={handleTen1Change} required pattern='[a-zA-Z0-9]+'  value={ten1} />
             </label>
             <br />
             Tenent 2
+            <br/>
             <span >Public address</span>
             <label className='tenent'>
             <input type="text" onChange={handleTen2Change} value={ten2} />
             </label> <br />
             
             Tenent 3
+            <br/>
             <span >Public address</span>
             <label className='tenent'>
               <input type="text" value={ten3} onChange={handleTen3Change} />
@@ -96,7 +101,7 @@ export default function MyForm() {
             <button className='addmore' type="submit">add more</button>
           </form>
         </div>
-        <button  className='submit' type="submit">Pay wallet</button>
+        <button onClick = {()=> navigate("/Payment")} className='submit' type="submit">Pay wallet</button>
       </div>
     </>
   );

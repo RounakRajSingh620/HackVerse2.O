@@ -5,18 +5,17 @@ const Paye = () => {
   const [transactionDetails, setTransactionDetails] = useState([]);
 
   const handleGetDetails = () => {
-    // Here you can write the logic to fetch the transaction details and update the state
-    // setTransactionDetails([...]); // Update the transactionDetails state with fetched data
+    alert("Payment Successfull!!")
   }
 
   return (
     <div className="main">
       <div className='main2'>
         <h1>Token Amount</h1><br />
-        <input className='input1' type="text" />
+        <input className='payee1' type="text" />
         <h1>Date</h1><br />
-        <input className='input1' type="date" /><br />
-        <button className='details' type="submit" onClick={handleGetDetails}>Get Details</button>
+        <input className='payee1' type="date" /><br />
+        <button className='details'  type="submit" onClick={handleGetDetails}>Pay Your Rent</button>
       </div>
       <div className='main3'>
         <h1>Transaction Details</h1>

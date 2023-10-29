@@ -5,17 +5,17 @@
   background-color:black;
   color:white;
   display:flex;
-  justify-content:space-around;
+  justify-content:space-between;
   align-items:center;
   padding: 5rem;
 }
 .rightForm{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width:50%;
-  margin: 0 auto;
+  height:100%;
+  align-items:center;
+  padding:0;
+  width:100%;
+  font-size:1.5rem;
+
 }
 .leftForm{
   display: flex;
@@ -23,7 +23,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:50%;
+  width:70vw;
   margin: 0 auto;
 }
 
@@ -54,7 +54,16 @@ input{
   font-size:1.1rem;
 }
 .tenent{
+  width:30%;
   display:flex;
+  height:5vh;
+  margin-top:2vh;
+  margin-bottom:2vh;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  font-size:1rem;
+
 }
 .upload{
   width:25%;

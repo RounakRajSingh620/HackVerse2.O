@@ -16,6 +16,7 @@
     "react-router-dom": "^6.17.0",
     "react-scripts": "5.0.1",
     "tailwind": "^4.0.0",
+    "truffle": "^5.11.5",
     "typescript": "^5.2.2",
     "viem": "^1.18.0",
     "wagmi": "^1.4.5",
