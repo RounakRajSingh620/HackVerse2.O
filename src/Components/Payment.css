@@ -9,9 +9,11 @@
   }
   .main2{
     margin-left:2rem;
-  width:97%;
+    left: 0;
+  width:50%;
   height:50%;
   }
+  
   .input1{
     width:20%;
     height:4vh;
@@ -31,4 +33,10 @@
     display:flex;
     justify-content:space-around;
     border-bottom:solid white;
+  }
+
+
+  .main2Img{
+    height: 5rem;
+    width: 5rem;
   }
