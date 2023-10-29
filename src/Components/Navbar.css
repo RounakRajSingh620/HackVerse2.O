@@ -3,7 +3,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: #000000;
-
+  /* padding-bottom: 5px; */
+ margin-bottom: 5px;
+position: static;
 }
 
 .logo {
@@ -17,14 +19,14 @@ nav {
 .left {
   display: flex;
   justify-content: space-between;
-  width: 30vw;
-  margin-right: 5%;
+  width: 50%;
+  /* margin-right: 5%; */
 
 }
 
 .navLink {
   width: 10vw;
-  /* margin: 5px; */
+  margin: 5px;
   font-size: x-large;
   display: flex;
   justify-content:center;
@@ -35,7 +37,7 @@ nav {
 }
 
 .connect {
-
+  margin-top:10px;
   height: 2em;
   padding: 10px;
   background-color: #fff;

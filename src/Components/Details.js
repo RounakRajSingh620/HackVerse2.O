@@ -2,72 +2,77 @@ import React, { useState } from 'react';
 import './Details.css';
 
 export default function MyForm() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [tenantenub, setTnenateNumber] = useState();
+  const [date, setDate] = useState();
   const [message, setMessage] = useState('');
 
-  const handleNameChange = (event) => {
-    setName(event.target.value);
+  const handleNumberChange = (event) => {
+    setTnenateNumber(event.target.value);
   };
-
+  const handleDateChange = (event) => {
+    setDate(event.target.value);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Add your form submission logic here
-    console.log("Form submitted!");
-    console.log("Name: ", name);
-    console.log("Email: ", email);
-    console.log("Message: ", message);
+
   };
 
   return (
     <>
       <div className='mainn'>
         <div className="page-2main">
-          <form className="form1" onSubmit={handleSubmit}>
-            <label>
+          <form className="leftForm" onSubmit={handleSubmit}>
+            <label className='lab'>
               No. of Tenent <br />
-              <input type="number" value={name} />
+              <input type="number" onChange={handleNumberChange} value={tenantenub} />
             </label>
             <br />
-            <label>
+            <label className='lab'>
               Date <br />
-              <input type="date" value={email} />
+              <input type="date" onChange={handleDateChange} value={date} />
             </label> <br />
 
-            <label>
+            <label className='lab'>
               Security Deposit <br />
-              <input type="number" value={email} />
+              <input type="number" value={tenantenub} />
             </label> <br />
-            <label>
+            <label className='lab'>
               Monthly Amount <br />
-              <input type="number" value={email} />
+              <input type="number" value={tenantenub} />
             </label><br />
-            <label>
+            <label className='lab' >
               Owner <br />
-              <button className='upload1' type="submit">upload signature</button>
-              <button className='upload1' type="submit">upload Agreement</button>
+              <div className='upSign'>
+                 <input className='inpSign' type="file" name="sign" id="" />
+                 <button className='upload1' type="submit">upload signature</button>
+              </div>
+              <div className='upAgr'>
+              <input className='inpAgr' type="file" name="agreement" id="" />
+               <button className='upload1' type="submit">upload Agreement</button>
+              </div>
+             
             </label>
           </form>
-          <form className="form2" onSubmit={handleSubmit}>
+          <form className="rightForm" onSubmit={handleSubmit}>
             Tenent 1
             <label className='tenent'>
-              <input type="text" value={name} />
+              <input type="text" value={Text} />
               <button className='upload' type="submit">upload signature</button>
             </label>
             <br />
             Tenent 2
             <label className='tenent'>
-              <input type="text" value={email} />
+              <input type="text" value={tenantenub} />
               <button className='upload' type="submit">upload signature</button>
             </label> <br />
 
             Tenent 3
             <label className='tenent'>
-              <input type="text" value={email} />
+              <input type="text" value={tenantenub} />
               <button className='upload' type="submit">upload signature</button>
             </label> <br />
-
+            <div></div>
             <button className='addmore' type="submit">add more</button>
           </form>
         </div>
@@ -76,3 +81,4 @@ export default function MyForm() {
     </>
   );
 }
+

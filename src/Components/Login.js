@@ -7,15 +7,15 @@ const Page3 = () => {
          const navigate = useNavigate()
   return (
     <div className='pagee3'>
-     <div className="how">How do you want to use </div> 
+     <div className="how">How do you want to use E-KIRAYA</div> 
       <div className='page3main'>
       <div onClick = {()=> navigate("/owner")} className='left1'>
         <img className="owner" src={owner} alt="owner" />
       Owner
       </div>
-      <div className='right1'>
+      <div onClick = {()=> navigate("/tenant")}  className='right1'>
         <img className="owner" src={owner} alt="owner" />
-      Tenent
+      Tenant
       </div>
     </div>
     </div>

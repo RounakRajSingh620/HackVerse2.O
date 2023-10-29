@@ -10,17 +10,17 @@ export default function Welcome() {
        
 
         return (
-                <div className="whole">
-                        <div className="main1">
+                <div className="welcome">
+                        <div className="welcomeDesc">
                                 <span>
-                                        Create your rent <br /> wallet
+                                        CREATE YOUR RENT <br /> WALLET
                                 </span>
 
                                 <button onClick={() => navigate("/dashboard")} type="button" className="joinBtn">Join now ➜ </button>
                         </div>
 
-                        <div className="main2">
-                                <img className="image1" src={image2} alt="{image}" />
+                        <div className="welcomeImage">
+                                <img className="welcomeImg" src={image2} alt="{image}" />
                         </div>
                 </div>
         );
